@@ -38,8 +38,9 @@ const Chat = ({ socket, username, room }) => {
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
       <View style={{ height: height * .4, width: width * .9, backgroundColor: 'lightblue', gap: 10 }}>
         <ScrollView>
-          <View style={{ height: 50, backgroundColor: 'gray', justifyContent: 'center', padding: 5 }}>
+          <View style={{ height: 50, backgroundColor: 'gray', justifyContent: 'flex-start', padding: 5 , flexDirection:'row', alignItems:'center' , gap:15 }}>
             <View style={{ width: 40, height: 40, borderRadius: 40, backgroundColor: 'white' }}></View>
+            <Text style = {{fontWeight:'bold'}}>{username.toUpperCase()}</Text>
           </View>
 
           {
